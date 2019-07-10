@@ -158,7 +158,7 @@ export default function combineReducers(reducers) {
         warning(warningMessage)
       }
     }
-
+// this explains pretty much why it's not advisable to mutate the state that is passed to a reducer. what if there is only one reducer ???
     let hasChanged = false
     const nextState = {}
     for (let i = 0; i < finalReducerKeys.length; i++) {
